@@ -34,7 +34,6 @@ public class DateSpinner {
         SpinnerDateModel model = new SpinnerDateModel();
         model.setCalendarField(Calendar.DATE);
         spinner.setModel(model);
-        
         /////       
         ///////////////////////////////////////////////////
         frame.add(spinner);
