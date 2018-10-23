@@ -18,8 +18,10 @@ public class NewJFrame1 extends javax.swing.JFrame {
      */
     public NewJFrame1() {
         initComponents();
+        /////code
         DefaultListModel model = new DefaultListModel();
         jList1.setModel(model);
+        /////
     }
 
     /**
@@ -64,10 +66,12 @@ public class NewJFrame1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        /////cdoe
         String item = (String) jComboBox1.getSelectedItem();
         DefaultListModel model = (DefaultListModel) jList1.getModel();
         model.addElement(item);
         jList1.updateUI();
+        /////
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
