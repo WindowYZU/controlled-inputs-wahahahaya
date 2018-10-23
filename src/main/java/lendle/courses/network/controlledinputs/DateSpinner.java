@@ -31,12 +31,10 @@ public class DateSpinner {
         JSpinner spinner=new JSpinner();
         //create a SpinnerDateModel
         /////code
-        SpinnerNumberModel model = new SpinnerNumberModel();
-        model.setMaximum(100);
-        model.setMinimum(0);
-        //model.setValue(50);
-        model.setStepSize(10);
-        spinner.setModel(model);//不打 = spinner model 預設值
+        SpinnerDateModel model = new SpinnerDateModel();
+        model.setCalendarField(Calendar.DATE);
+        spinner.setModel(model);
+        
         /////       
         ///////////////////////////////////////////////////
         frame.add(spinner);
